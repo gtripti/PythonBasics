@@ -37,4 +37,59 @@ for (key, value) in d.items():
     print(key)
     print(value)
 
+x = [1,2,3]
+for i in x :
+    # do nothing at all
+    pass
+print('End of the script')
+
+myString = 'Sammy'
+for letter in myString :
+    if letter == 'a':
+        continue
+    print(letter)
     
+myString = 'Sammy'
+for letter in myString :
+    if letter == 'a':
+        break
+    print(letter)
+
+# using range keyword
+myList = [1,2,3]
+# from 0 upto 10 and not including 10
+for num in range(10) :
+    print(num)
+    
+# from 3 upto 10 and not including 10
+for num in range(3,10) :
+    print(num)
+
+# in steps of 2
+for num in range (0,10,2) :
+    print(num)
+
+# Enumerate
+index_count = 0
+word = 'abcde'
+for letter in word:
+    print(word[index_count])
+    index_count += 1
+
+# instead of above we use enumerate function
+word = 'abcde'
+for item in enumerate(word):
+    print(item)
+for index,letter in enumerate(word):
+    print(letter)
+    
+# Zip
+list1 = [1,2,3]
+list2 = ['a','b','c']
+for item in zip(list1,list2) :
+    print(item)
+    
+# in operator 
+'x' in [1,2,3]
+d = {'k1' : 345}
+345 in d.values()
